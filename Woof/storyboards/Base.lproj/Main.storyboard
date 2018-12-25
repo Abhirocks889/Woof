@@ -42,7 +42,7 @@
                                                         <constraint firstAttribute="height" constant="150" id="maR-ts-ejk"/>
                                                     </constraints>
                                                 </imageView>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PeS-X2-8ec">
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PeS-X2-8ec">
                                                     <rect key="frame" x="65" y="65" width="20" height="20"/>
                                                 </activityIndicatorView>
                                             </subviews>
@@ -122,6 +122,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionFlowLayout" destination="L3j-mh-yo5" id="kNu-FY-7Kf"/>
                         <outlet property="collectionView" destination="uBg-Rh-bvR" id="P8e-u7-Dv0"/>
                         <outlet property="imageView" destination="E9j-cz-wJC" id="8pf-Kz-2Gl"/>
                         <outlet property="messageText" destination="pTr-0f-ouk" id="e43-bD-4DL"/>

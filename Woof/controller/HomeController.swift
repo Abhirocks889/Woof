@@ -13,14 +13,14 @@ class HomeController{
     fileprivate func parseResponse(_ result: [[String : AnyObject]], _ dogArray: inout [Dog]){
         for item in result{
             let dogObj = Dog()
-            if let breeds = item[NetworkClient.Constants.ResponseKeys.Breeds] as? [[String:Any]],let id = [NetworkClient.Constants.ResponseKeys.Id] as? String, let url = item[NetworkClient.Constants.ResponseKeys.Url] as? String{
+            if let breeds = item[NetworkClient.Constants.ResponseKeys.Breeds] as? [[String:Any]],let id = item[NetworkClient.Constants.ResponseKeys.Id] as? String, let url = item[NetworkClient.Constants.ResponseKeys.Url] as? String{
                 if !breeds.isEmpty{
                     let breed:Breed = Breed()
                     for breedItem in breeds{
                         breed.id = breedItem[NetworkClient.Constants.ResponseKeys.Id] as! Int
                         breed.name = breedItem[NetworkClient.Constants.ResponseKeys.Name] as! String
                         breed.lifeSpan = breedItem[NetworkClient.Constants.ResponseKeys.LifeSpan] as! String
-                        breed.breedGroup = breedItem[NetworkClient.Constants.ResponseKeys.BreedGroup] as! String
+                       // breed.breedGroup = breedItem[NetworkClient.Constants.ResponseKeys.BreedGroup] as! String
                         if let weight = breedItem[NetworkClient.Constants.ResponseKeys.Weight] as? [String:Any]{
                             let wt = Weight()
                             wt.imperial = weight[NetworkClient.Constants.ResponseKeys.Imperial] as! String

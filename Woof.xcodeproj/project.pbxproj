@@ -29,6 +29,7 @@
 		B80CC81421D2B1FC007C067C /* CustomReqAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81321D2B1FC007C067C /* CustomReqAdapter.swift */; };
 		B80CC81621D2B244007C067C /* DogCeo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B80CC81521D2B244007C067C /* DogCeo-Info.plist */; };
 		B80CC81821D2B53E007C067C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81721D2B53E007C067C /* HomeController.swift */; };
+		B80CC81A21D2CDD4007C067C /* HomeViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */; };
 		D42620E9C01FCA030BABF0A4 /* Pods_WoofTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A018E21C48CE8F55A3CADE80 /* Pods_WoofTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		B80CC81321D2B1FC007C067C /* CustomReqAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomReqAdapter.swift; sourceTree = "<group>"; };
 		B80CC81521D2B244007C067C /* DogCeo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DogCeo-Info.plist"; sourceTree = "<group>"; };
 		B80CC81721D2B53E007C067C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegates.swift"; sourceTree = "<group>"; };
 		EA9971AFEC35BC15C3B03025 /* Pods-WoofUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoofUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoofUITests/Pods-WoofUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +213,7 @@
 				B80CC80021D23E62007C067C /* HomeViewController.swift */,
 				B80CC80221D23EAA007C067C /* LoginViewController.swift */,
 				B80CC80421D2A927007C067C /* DogItemCell.swift */,
+				B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				B80CC80321D23EAA007C067C /* LoginViewController.swift in Sources */,
 				B80CC81221D2AD9F007C067C /* NetworkClient+Constants.swift in Sources */,
 				B80CC80121D23E62007C067C /* HomeViewController.swift in Sources */,
+				B80CC81A21D2CDD4007C067C /* HomeViewController+Delegates.swift in Sources */,
 				B80CC80B21D2AC3A007C067C /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

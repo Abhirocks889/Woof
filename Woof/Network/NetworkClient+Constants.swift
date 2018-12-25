@@ -29,8 +29,8 @@ extension NetworkClient {
             static let ValueMimeType = "jpg"
             static let ValueFormat = "json"
             static let ValueHasBreeds = "true"
-            static let ValuePageDefault = 0
-            static let ValueLimitDefault = 25
+            static let ValuePageDefault = "0"
+            static let ValueLimitDefault = "25"
         }
         
         struct ResponseKeys {
