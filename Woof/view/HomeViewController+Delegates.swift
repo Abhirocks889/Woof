@@ -22,7 +22,6 @@ extension HomeViewController : UICollectionViewDataSource , UICollectionViewDele
                 }
             }
         }
-      
         return dogItemCell
     }
     
