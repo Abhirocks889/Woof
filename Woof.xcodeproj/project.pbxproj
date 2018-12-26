@@ -29,6 +29,7 @@
 		B80CC81621D2B244007C067C /* DogCeo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B80CC81521D2B244007C067C /* DogCeo-Info.plist */; };
 		B80CC81821D2B53E007C067C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81721D2B53E007C067C /* HomeController.swift */; };
 		B80CC81A21D2CDD4007C067C /* HomeViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */; };
+		B80CC81C21D3E43B007C067C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81B21D3E43B007C067C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		B80CC81521D2B244007C067C /* DogCeo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DogCeo-Info.plist"; sourceTree = "<group>"; };
 		B80CC81721D2B53E007C067C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegates.swift"; sourceTree = "<group>"; };
+		B80CC81B21D3E43B007C067C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				B80CC80221D23EAA007C067C /* LoginViewController.swift */,
 				B80CC80421D2A927007C067C /* DogItemCell.swift */,
 				B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */,
+				B80CC81B21D3E43B007C067C /* DetailViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				B80CC81421D2B1FC007C067C /* CustomReqAdapter.swift in Sources */,
 				B80CC81021D2AD71007C067C /* NetworkClient.swift in Sources */,
 				B80CC80521D2A927007C067C /* DogItemCell.swift in Sources */,
+				B80CC81C21D3E43B007C067C /* DetailViewController.swift in Sources */,
 				B80CC7CD21D236C6007C067C /* ViewController.swift in Sources */,
 				B80CC7CB21D236C6007C067C /* AppDelegate.swift in Sources */,
 				B80CC80D21D2AC6F007C067C /* Height.swift in Sources */,
@@ -625,7 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9UUNG87XVY;
+				DEVELOPMENT_TEAM = BWJW457D2L;
 				INFOPLIST_FILE = Woof/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -642,7 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9UUNG87XVY;
+				DEVELOPMENT_TEAM = BWJW457D2L;
 				INFOPLIST_FILE = Woof/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

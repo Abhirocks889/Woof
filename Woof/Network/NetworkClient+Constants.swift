@@ -23,6 +23,7 @@ extension NetworkClient {
             static let HasBreeds = "has_breeds"
             static let Page = "page"
             static let Limit = "limit"
+            static let Size = "size"
         }
         
         struct ParameterValues {
@@ -31,6 +32,7 @@ extension NetworkClient {
             static let ValueHasBreeds = "true"
             static let ValuePageDefault = "0"
             static let ValueLimitDefault = "25"
+            static let ValueSize = "med"
         }
         
         struct ResponseKeys {

@@ -16,10 +16,12 @@ class NetworkClient {
     
     func getDogs(pageNum:String,completionHandler : @escaping(_ success:Bool ,_ response:[[String:AnyObject]]?,_ errorMessage:String?) -> Void){
         let params = [Constants.ParameterKeys.Page : pageNum,
+                      Constants.ParameterKeys.Size : Constants.ParameterValues.ValueSize,
                       Constants.ParameterKeys.MimeTypes :Constants.ParameterValues.ValueMimeType,
                       Constants.ParameterKeys.Format:Constants.ParameterValues.ValueFormat,
                       Constants.ParameterKeys.HasBreeds:Constants.ParameterValues.ValueHasBreeds,
                       Constants.ParameterKeys.Limit:Constants.ParameterValues.ValueLimitDefault] as [String : AnyObject]
+        
         let url = getUrlFromParameters(params , pathExtension: Constants.DogCeo.apiPathExtension)
         // get a session manager and add the request adapter
         let sessionManager = Alamofire.SessionManager.default

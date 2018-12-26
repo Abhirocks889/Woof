@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var refreshButton: MDCFloatingButton!
     @IBOutlet weak var collectionFlowLayout: UICollectionViewFlowLayout!
     var dogs:[Dog] = []
+    var page = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func fetchList(){
-        HomeController.Shared.getMedicines(pageNum: "0"){
+        HomeController.Shared.getMedicines(pageNum:"\(page)"){
             (isSuccess,response,error) in
             if(isSuccess){
                 self.dogs = response!
@@ -50,6 +51,8 @@ class HomeViewController: UIViewController {
         collectionView.isHidden = true
         retryButton.isHidden = true
         refreshButton.isHidden = true
+        messageText.isHidden = false
+        imageView.isHidden = false
         messageText.text = "Fetching!!"
     }
     
@@ -75,23 +78,14 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func onRetryClicked(_ sender: Any) {
+         setViewsForApiCall()
+         fetchList()
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    @IBAction func onRefreshClicked(_ sender: Any) {
+        setViewsForApiCall()
+        page += 1
+        fetchList()
+    }
 }

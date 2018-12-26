@@ -29,5 +29,10 @@ extension HomeViewController : UICollectionViewDataSource , UICollectionViewDele
         return dogs.count
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let destinationViewController = self.storyboard?.instantiateViewController(withIdentifier: "detailvc") as! DetailViewController
+        let dog = dogs[indexPath.row]
+        destinationViewController.dog = dog
+        self.navigationController?.pushViewController(destinationViewController, animated: true)
+    }
 }

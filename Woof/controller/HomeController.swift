@@ -20,7 +20,15 @@ class HomeController{
                         breed.id = breedItem[NetworkClient.Constants.ResponseKeys.Id] as! Int
                         breed.name = breedItem[NetworkClient.Constants.ResponseKeys.Name] as! String
                         breed.lifeSpan = breedItem[NetworkClient.Constants.ResponseKeys.LifeSpan] as! String
-                       // breed.breedGroup = breedItem[NetworkClient.Constants.ResponseKeys.BreedGroup] as! String
+                        if let group = breedItem[NetworkClient.Constants.ResponseKeys.BreedGroup] as? String{
+                            breed.breedGroup = group
+                        }
+                        if let bredFor = breedItem[NetworkClient.Constants.ResponseKeys.BredFor] as? String{
+                            breed.bredFor = bredFor
+                        }
+                        if let temperment = breedItem[NetworkClient.Constants.ResponseKeys.Tempermant] as? String{
+                            breed.temperament = temperment
+                        }
                         if let weight = breedItem[NetworkClient.Constants.ResponseKeys.Weight] as? [String:Any]{
                             let wt = Weight()
                             wt.imperial = weight[NetworkClient.Constants.ResponseKeys.Imperial] as! String
@@ -33,6 +41,7 @@ class HomeController{
                             ht.metric = height[NetworkClient.Constants.ResponseKeys.Metric]  as! String
                             breed.height = ht
                         }
+                        
                         dogObj.breed.append(breed)
                         dogObj.id = id
                         dogObj.url = url
