@@ -31,21 +31,13 @@ DEPENDENCIES:
   - MaterialComponents/Buttons
   - SwiftyJSON
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - MaterialComponents
-    - MDFInternationalization
-    - MDFTextAccessibility
-    - SwiftyJSON
-
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   MaterialComponents: d1637df9976683348de8eabd10de0723ec81db3d
-  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFInternationalization: '010097556d6b09d2c4ea38e0820ea6d37be6a314'
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 43f58820e419fdbc5333332d15895f0b061c522d
+PODFILE CHECKSUM: 9b335338a07c25b7569ec73e2fb74bbd7c36aeae
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.2.0
