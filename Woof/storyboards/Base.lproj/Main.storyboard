@@ -122,6 +122,9 @@
                     <navigationItem key="navigationItem" title="Home" id="dIb-a6-Yhu">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Ubh-2h-rUJ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="4so-JO-7hg" kind="push" id="0cN-js-WyW"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -300,6 +303,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ff-Lb-6Rp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1760.625" y="32.74647887323944"/>
+        </scene>
+        <!--Breed List View Controller-->
+        <scene sceneID="qui-Tq-rF2">
+            <objects>
+                <viewController id="4so-JO-7hg" customClass="BreedListViewController" customModule="Woof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iZw-4A-2qJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e4V-5J-bNh">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="breedcell" textLabel="pqi-PO-dCH" style="IBUITableViewCellStyleDefault" id="h3b-2W-AzZ">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h3b-2W-AzZ" id="87X-du-jgi">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pqi-PO-dCH">
+                                                    <rect key="frame" x="24" y="0.0" width="281" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="24" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eVH-a6-P36">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eVH-a6-P36" firstAttribute="centerY" secondItem="iZw-4A-2qJ" secondAttribute="centerY" id="4e8-8U-6Nh"/>
+                            <constraint firstItem="GUi-BO-ng4" firstAttribute="bottom" secondItem="e4V-5J-bNh" secondAttribute="bottom" id="81I-gw-tpA"/>
+                            <constraint firstItem="GUi-BO-ng4" firstAttribute="trailing" secondItem="e4V-5J-bNh" secondAttribute="trailing" id="CBW-pl-xCK"/>
+                            <constraint firstItem="e4V-5J-bNh" firstAttribute="top" secondItem="GUi-BO-ng4" secondAttribute="top" id="NwK-pP-VA0"/>
+                            <constraint firstItem="e4V-5J-bNh" firstAttribute="leading" secondItem="GUi-BO-ng4" secondAttribute="leading" id="nhR-BB-lkD"/>
+                            <constraint firstItem="eVH-a6-P36" firstAttribute="centerX" secondItem="iZw-4A-2qJ" secondAttribute="centerX" id="siW-ZX-Lha"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GUi-BO-ng4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wgc-sZ-9j1"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="eVH-a6-P36" id="Er4-Nz-yj6"/>
+                        <outlet property="tableView" destination="e4V-5J-bNh" id="zwn-h3-WQB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yuq-Qa-rNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2436" y="34"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yqe-VD-nFr">

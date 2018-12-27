@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func fetchList(){
-        HomeController.Shared.getMedicines(pageNum:"\(page)"){
+        HomeController.Shared.fetchDogs(pageNum:"\(page)"){
             (isSuccess,response,error) in
             if(isSuccess){
                 self.dogs = response!

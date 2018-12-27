@@ -14,6 +14,18 @@ class NetworkClient {
     static let shared = NetworkClient()
     private init() {}
     
+    func getDogByBreed(breedId:Int,comletionHandler : @escaping (_ _success:Bool , _ response:[[String:AnyObject]]? , _ errorMessage:String?) -> Void){
+        let params = [Constants.ParameterKeys.BreedId:breedId] as [String:AnyObject]
+        let url = getUrlFromParameters(params, pathExtension:Constants.DogCeo.apiPathExtension)
+        handleGetCallForJsonArrayObje(url,comletionHandler)
+    }
+    func getBreeds(completionHandler : @escaping( _ success:Bool , _ response:[[String:AnyObject]]?, _ errormessage:String?) -> Void) {
+        let params = [Constants.ParameterKeys.Page:Constants.ParameterValues.ValuePageDefault,
+        Constants.ParameterKeys.Limit:Constants.ParameterValues.ValueBreedsLimitDefault] as [String:AnyObject]
+        let url = getUrlFromParameters(params , pathExtension: Constants.DogCeo.apiPathExtensionBreeds)
+        handleGetCallForJsonArrayObje(url, completionHandler)
+    }
+    
     func getDogs(pageNum:String,completionHandler : @escaping(_ success:Bool ,_ response:[[String:AnyObject]]?,_ errorMessage:String?) -> Void){
         let params = [Constants.ParameterKeys.Page : pageNum,
                       Constants.ParameterKeys.Size : Constants.ParameterValues.ValueSize,
@@ -23,6 +35,10 @@ class NetworkClient {
                       Constants.ParameterKeys.Limit:Constants.ParameterValues.ValueLimitDefault] as [String : AnyObject]
         
         let url = getUrlFromParameters(params , pathExtension: Constants.DogCeo.apiPathExtension)
+        handleGetCallForJsonArrayObje(url, completionHandler)
+    }
+    
+    fileprivate func handleGetCallForJsonArrayObje(_ url: URL, _ completionHandler: @escaping (Bool, [[String : AnyObject]]?, String?) -> Void) {
         // get a session manager and add the request adapter
         let sessionManager = Alamofire.SessionManager.default
         sessionManager.adapter = CustomRequestAdapter()
@@ -42,7 +58,6 @@ class NetworkClient {
             }
         }
     }
-    
     private  func getUrlFromParameters (_ parameters: [String:AnyObject],pathExtension:String = "") -> URL{
         var components = URLComponents()
         let withPathExtension = pathExtension

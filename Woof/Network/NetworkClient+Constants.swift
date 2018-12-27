@@ -15,6 +15,7 @@ extension NetworkClient {
             static let apiHost = "api.thedogapi.com"
             static let apiPath = "/v1"
             static let apiPathExtension = "/images/search"
+            static let apiPathExtensionBreeds = "/breeds"
         }
         //mime_types=jpg&format=json&has_breeds=true&page=0&limit=25
         struct ParameterKeys {
@@ -24,6 +25,7 @@ extension NetworkClient {
             static let Page = "page"
             static let Limit = "limit"
             static let Size = "size"
+            static let BreedId = "breed_id"
         }
         
         struct ParameterValues {
@@ -32,6 +34,7 @@ extension NetworkClient {
             static let ValueHasBreeds = "true"
             static let ValuePageDefault = "0"
             static let ValueLimitDefault = "25"
+            static let ValueBreedsLimitDefault = "100000"
             static let ValueSize = "med"
         }
         
