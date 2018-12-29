@@ -13,18 +13,24 @@ class BreedListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var breeds:[Breeds] = []
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    var filteredBreeds: [Breeds]?
+    var filteredBreeds: [Breeds] = []
+    var searchController = UISearchController(searchResultsController: nil)
 
+
+    fileprivate func configureSearchBar() {
+        definesPresentationContext = true
+        searchController.searchResultsUpdater = self
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = false
+        tableView.tableHeaderView = searchController.searchBar
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         fetchBreeds()
-        let searchController = UISearchController(searchResultsController: nil)
-//        searchController.searchResultsUpdater = self
-        searchController.hidesNavigationBarDuringPresentation = false
-        searchController.dimsBackgroundDuringPresentation = false
-        tableView.tableHeaderView = searchController.searchBar
+        configureSearchBar()
     }
 
     func fetchDogById(id:Int){
