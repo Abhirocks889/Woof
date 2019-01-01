@@ -30,6 +30,23 @@
 		B80CC81821D2B53E007C067C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81721D2B53E007C067C /* HomeController.swift */; };
 		B80CC81A21D2CDD4007C067C /* HomeViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */; };
 		B80CC81C21D3E43B007C067C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81B21D3E43B007C067C /* DetailViewController.swift */; };
+		B810C74421D540AB0070F7FF /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74321D540AB0070F7FF /* Breeds.swift */; };
+		B810C74621D54A290070F7FF /* BreedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74521D54A290070F7FF /* BreedListViewController.swift */; };
+		B810C74821D54AC40070F7FF /* BreedListViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74721D54AC40070F7FF /* BreedListViewController+Delegates.swift */; };
+		B810C74A21D54D210070F7FF /* BreedsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74921D54D210070F7FF /* BreedsController.swift */; };
+		B810C74C21D5556F0070F7FF /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74B21D5556F0070F7FF /* BaseController.swift */; };
+		B8BDBE8221DBB7CB009285C5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBE8121DBB7CB009285C5 /* DataController.swift */; };
+		B8BDBEB021DBE7A3009285C5 /* CoreDataWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEA621DBE7A2009285C5 /* CoreDataWeight.swift */; };
+		B8BDBEB121DBE7A3009285C5 /* CoreDataBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEA721DBE7A2009285C5 /* CoreDataBreed.swift */; };
+		B8BDBEB221DBE7A3009285C5 /* CoreDataBreeds+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEA821DBE7A2009285C5 /* CoreDataBreeds+Properties.swift */; };
+		B8BDBEB321DBE7A3009285C5 /* CoreDataBreeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEA921DBE7A2009285C5 /* CoreDataBreeds.swift */; };
+		B8BDBEB421DBE7A3009285C5 /* CoreDataDog+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEAA21DBE7A2009285C5 /* CoreDataDog+Properties.swift */; };
+		B8BDBEB521DBE7A3009285C5 /* CoreDataHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEAB21DBE7A3009285C5 /* CoreDataHeight.swift */; };
+		B8BDBEB621DBE7A3009285C5 /* CoreDataDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEAC21DBE7A3009285C5 /* CoreDataDog.swift */; };
+		B8BDBEB721DBE7A3009285C5 /* CoreDataBreeProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEAD21DBE7A3009285C5 /* CoreDataBreeProperties.swift */; };
+		B8BDBEB821DBE7A3009285C5 /* CoreDataHeight+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEAE21DBE7A3009285C5 /* CoreDataHeight+Properties.swift */; };
+		B8BDBEB921DBE7A3009285C5 /* CoreDataWeight+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEAF21DBE7A3009285C5 /* CoreDataWeight+Properties.swift */; };
+		B8DF4F4821DBF21B00445734 /* Woof+CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DF4F4721DBF21B00445734 /* Woof+CoreDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +100,23 @@
 		B80CC81721D2B53E007C067C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegates.swift"; sourceTree = "<group>"; };
 		B80CC81B21D3E43B007C067C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B810C74321D540AB0070F7FF /* Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
+		B810C74521D54A290070F7FF /* BreedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListViewController.swift; sourceTree = "<group>"; };
+		B810C74721D54AC40070F7FF /* BreedListViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BreedListViewController+Delegates.swift"; sourceTree = "<group>"; };
+		B810C74921D54D210070F7FF /* BreedsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsController.swift; sourceTree = "<group>"; };
+		B810C74B21D5556F0070F7FF /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		B8BDBE8121DBB7CB009285C5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B8BDBEA621DBE7A2009285C5 /* CoreDataWeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataWeight.swift; path = ../../../../../model/CoreDataWeight.swift; sourceTree = "<group>"; };
+		B8BDBEA721DBE7A2009285C5 /* CoreDataBreed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataBreed.swift; path = ../../../../../model/CoreDataBreed.swift; sourceTree = "<group>"; };
+		B8BDBEA821DBE7A2009285C5 /* CoreDataBreeds+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoreDataBreeds+Properties.swift"; path = "../../../../../model/CoreDataBreeds+Properties.swift"; sourceTree = "<group>"; };
+		B8BDBEA921DBE7A2009285C5 /* CoreDataBreeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataBreeds.swift; path = ../../../../../model/CoreDataBreeds.swift; sourceTree = "<group>"; };
+		B8BDBEAA21DBE7A2009285C5 /* CoreDataDog+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoreDataDog+Properties.swift"; path = "../../../../../model/CoreDataDog+Properties.swift"; sourceTree = "<group>"; };
+		B8BDBEAB21DBE7A3009285C5 /* CoreDataHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHeight.swift; path = ../../../../../model/CoreDataHeight.swift; sourceTree = "<group>"; };
+		B8BDBEAC21DBE7A3009285C5 /* CoreDataDog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataDog.swift; path = ../../../../../model/CoreDataDog.swift; sourceTree = "<group>"; };
+		B8BDBEAD21DBE7A3009285C5 /* CoreDataBreeProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataBreeProperties.swift; path = ../../../../../model/CoreDataBreeProperties.swift; sourceTree = "<group>"; };
+		B8BDBEAE21DBE7A3009285C5 /* CoreDataHeight+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoreDataHeight+Properties.swift"; path = "../../../../../model/CoreDataHeight+Properties.swift"; sourceTree = "<group>"; };
+		B8BDBEAF21DBE7A3009285C5 /* CoreDataWeight+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoreDataWeight+Properties.swift"; path = "../../../../../model/CoreDataWeight+Properties.swift"; sourceTree = "<group>"; };
+		B8DF4F4721DBF21B00445734 /* Woof+CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Woof+CoreDataModel.swift"; path = "../../../../../model/Woof+CoreDataModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +199,7 @@
 				B80CC7D921D236CA007C067C /* Info.plist */,
 				B80CC7D121D236C6007C067C /* Woof.xcdatamodeld */,
 				B80CC81521D2B244007C067C /* DogCeo-Info.plist */,
+				B8BDBE8121DBB7CB009285C5 /* DataController.swift */,
 			);
 			path = Woof;
 			sourceTree = "<group>";
@@ -205,6 +240,8 @@
 				B80CC80421D2A927007C067C /* DogItemCell.swift */,
 				B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */,
 				B80CC81B21D3E43B007C067C /* DetailViewController.swift */,
+				B810C74521D54A290070F7FF /* BreedListViewController.swift */,
+				B810C74721D54AC40070F7FF /* BreedListViewController+Delegates.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -213,6 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				B80CC81721D2B53E007C067C /* HomeController.swift */,
+				B810C74921D54D210070F7FF /* BreedsController.swift */,
+				B810C74B21D5556F0070F7FF /* BaseController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -220,10 +259,12 @@
 		B80CC7FF21D238B3007C067C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B8BDBEA521DBE78F009285C5 /* coredata */,
 				B80CC80621D2AB04007C067C /* Dog.swift */,
 				B80CC80821D2AB54007C067C /* Breed.swift */,
 				B80CC80A21D2AC3A007C067C /* Weight.swift */,
 				B80CC80C21D2AC6F007C067C /* Height.swift */,
+				B810C74321D540AB0070F7FF /* Breeds.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -236,6 +277,24 @@
 				B80CC81321D2B1FC007C067C /* CustomReqAdapter.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		B8BDBEA521DBE78F009285C5 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				B8BDBEA721DBE7A2009285C5 /* CoreDataBreed.swift */,
+				B8BDBEAD21DBE7A3009285C5 /* CoreDataBreeProperties.swift */,
+				B8BDBEA921DBE7A2009285C5 /* CoreDataBreeds.swift */,
+				B8BDBEA821DBE7A2009285C5 /* CoreDataBreeds+Properties.swift */,
+				B8BDBEAC21DBE7A3009285C5 /* CoreDataDog.swift */,
+				B8BDBEAA21DBE7A2009285C5 /* CoreDataDog+Properties.swift */,
+				B8BDBEAB21DBE7A3009285C5 /* CoreDataHeight.swift */,
+				B8BDBEAE21DBE7A3009285C5 /* CoreDataHeight+Properties.swift */,
+				B8BDBEA621DBE7A2009285C5 /* CoreDataWeight.swift */,
+				B8BDBEAF21DBE7A3009285C5 /* CoreDataWeight+Properties.swift */,
+				B8DF4F4721DBF21B00445734 /* Woof+CoreDataModel.swift */,
+			);
+			path = coredata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,20 +498,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				B80CC80921D2AB54007C067C /* Breed.swift in Sources */,
+				B8BDBEB021DBE7A3009285C5 /* CoreDataWeight.swift in Sources */,
 				B80CC7D321D236C6007C067C /* Woof.xcdatamodeld in Sources */,
 				B80CC81821D2B53E007C067C /* HomeController.swift in Sources */,
+				B8BDBEB821DBE7A3009285C5 /* CoreDataHeight+Properties.swift in Sources */,
 				B80CC80721D2AB04007C067C /* Dog.swift in Sources */,
+				B8BDBEB321DBE7A3009285C5 /* CoreDataBreeds.swift in Sources */,
 				B80CC81421D2B1FC007C067C /* CustomReqAdapter.swift in Sources */,
+				B8BDBEB921DBE7A3009285C5 /* CoreDataWeight+Properties.swift in Sources */,
+				B8BDBE8221DBB7CB009285C5 /* DataController.swift in Sources */,
+				B8BDBEB121DBE7A3009285C5 /* CoreDataBreed.swift in Sources */,
+				B810C74621D54A290070F7FF /* BreedListViewController.swift in Sources */,
+				B810C74A21D54D210070F7FF /* BreedsController.swift in Sources */,
 				B80CC81021D2AD71007C067C /* NetworkClient.swift in Sources */,
+				B8DF4F4821DBF21B00445734 /* Woof+CoreDataModel.swift in Sources */,
 				B80CC80521D2A927007C067C /* DogItemCell.swift in Sources */,
+				B810C74421D540AB0070F7FF /* Breeds.swift in Sources */,
 				B80CC81C21D3E43B007C067C /* DetailViewController.swift in Sources */,
 				B80CC7CD21D236C6007C067C /* ViewController.swift in Sources */,
+				B810C74821D54AC40070F7FF /* BreedListViewController+Delegates.swift in Sources */,
+				B8BDBEB221DBE7A3009285C5 /* CoreDataBreeds+Properties.swift in Sources */,
 				B80CC7CB21D236C6007C067C /* AppDelegate.swift in Sources */,
 				B80CC80D21D2AC6F007C067C /* Height.swift in Sources */,
 				B80CC80321D23EAA007C067C /* LoginViewController.swift in Sources */,
+				B8BDBEB621DBE7A3009285C5 /* CoreDataDog.swift in Sources */,
+				B8BDBEB521DBE7A3009285C5 /* CoreDataHeight.swift in Sources */,
+				B8BDBEB721DBE7A3009285C5 /* CoreDataBreeProperties.swift in Sources */,
+				B810C74C21D5556F0070F7FF /* BaseController.swift in Sources */,
 				B80CC81221D2AD9F007C067C /* NetworkClient+Constants.swift in Sources */,
 				B80CC80121D23E62007C067C /* HomeViewController.swift in Sources */,
 				B80CC81A21D2CDD4007C067C /* HomeViewController+Delegates.swift in Sources */,
+				B8BDBEB421DBE7A3009285C5 /* CoreDataDog+Properties.swift in Sources */,
 				B80CC80B21D2AC3A007C067C /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

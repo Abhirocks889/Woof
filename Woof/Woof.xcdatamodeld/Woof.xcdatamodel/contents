@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CoreDataBreed" representedClassName=".CoreDataBreed" syncable="YES">
+        <attribute name="bredfor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="breedgroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lifespan" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempermant" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dog" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CoreDataDog" inverseName="breeds" inverseEntity="CoreDataDog" syncable="YES"/>
+        <relationship name="height" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoreDataHeight" inverseName="breed" inverseEntity="CoreDataHeight" syncable="YES"/>
+        <relationship name="weight" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoreDataWeight" inverseName="breed" inverseEntity="CoreDataWeight" syncable="YES"/>
+    </entity>
+    <entity name="CoreDataBreeds" representedClassName=".CoreDataBreeds" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CoreDataDog" representedClassName=".CoreDataDog" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="breeds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CoreDataBreed" inverseName="dog" inverseEntity="CoreDataBreed" syncable="YES"/>
+    </entity>
+    <entity name="CoreDataHeight" representedClassName=".CoreDataHeight" syncable="YES">
+        <attribute name="imperial" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="metric" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="breed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoreDataBreed" inverseName="height" inverseEntity="CoreDataBreed" syncable="YES"/>
+    </entity>
+    <entity name="CoreDataWeight" representedClassName=".CoreDataWeight" syncable="YES">
+        <attribute name="imperial" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="metric" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="breed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoreDataBreed" inverseName="weight" inverseEntity="CoreDataBreed" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CoreDataBreed" positionX="92.40625" positionY="-346.86328125" width="128" height="178"/>
+        <element name="CoreDataBreeds" positionX="-214.734375" positionY="-328.11328125" width="128" height="75"/>
+        <element name="CoreDataDog" positionX="84.24609375" positionY="-596.984375" width="128" height="103"/>
+        <element name="CoreDataHeight" positionX="228" positionY="-125.671875" width="128" height="88"/>
+        <element name="CoreDataWeight" positionX="-70.421875" positionY="-125.80859375" width="128" height="88"/>
+    </elements>
 </model>

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+import CoreData
 
 class BreedListViewController: UIViewController {
 
@@ -15,6 +17,7 @@ class BreedListViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var filteredBreeds: [Breeds] = []
     var searchController = UISearchController(searchResultsController: nil)
+    var fetchedResultsController:NSFetchedResultsController<CoreDataBreeds>!
 
 
     fileprivate func configureSearchBar() {
@@ -29,10 +32,30 @@ class BreedListViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        setUpFetchResultsController()
         fetchBreeds()
         configureSearchBar()
     }
 
+    func setUpFetchResultsController(){
+        let breedsFetchRequest = NSFetchRequest<CoreDataBreeds>(entityName: "CoreDataBreeds")
+        breedsFetchRequest.sortDescriptors = []
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: breedsFetchRequest, managedObjectContext: DataController.shared.viewContext, sectionNameKeyPath: nil, cacheName: nil)
+        do {
+            try fetchedResultsController.performFetch()
+            let count = try fetchedResultsController.managedObjectContext.count(for: fetchedResultsController.fetchRequest)
+            for index in 0..<count{
+                let breed = fetchedResultsController.object(at: IndexPath(row: index, section: 0))
+                let breedObj = Breeds()
+                breedObj.id = breed.id
+                breedObj.name = breed.name
+                breeds.append(breedObj)
+            }
+        } catch  {
+            fatalError("The fetch could not be performed: \(error.localizedDescription)")
+        }
+    }
+    
     func fetchDogById(id:Int){
         BreedsController.Shared.getDogByBreed(breedId:id){
             (isSuccess,response,errorMessage) in
@@ -50,17 +73,28 @@ class BreedListViewController: UIViewController {
         
     }
     fileprivate func fetchBreeds(){
-        BreedsController.Shared.getBreeds{
-            (isSuccess,response,errorMessage) in
-            if(isSuccess){
-                if let response = response{
-                    self.breeds = response
-                    self.tableView.reloadData()
-                    self.activityIndicator.stopAnimating()
+        if(breeds.isEmpty){
+            BreedsController.Shared.getBreeds{
+                (isSuccess,response,errorMessage) in
+                if(isSuccess){
+                    if let response = response{
+                        self.breeds = response
+                        DispatchQueue.global(qos: .userInitiated).async {
+                            for breed in self.breeds {
+                                let _ = CoreDataBreeds(id: breed.id, name: breed.name, context: DataController.shared.viewContext)
+                                DataController.shared.saveContext()
+                            }
+                        }
+                        self.tableView.reloadData()
+                        self.activityIndicator.stopAnimating()
+                    }
+                }else{
+                    //Handle failure case here
                 }
-            }else{
-                //Handle failure case here
             }
+        }else{
+            self.tableView.reloadData()
+            self.activityIndicator.stopAnimating()
         }
     }
 }

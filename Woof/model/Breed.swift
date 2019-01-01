@@ -24,6 +24,8 @@
 //],
 
 import Foundation
+import CoreData
+
 class Breed {
     var id = -1
     var name = ""
