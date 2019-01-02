@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B5843DDAD4EA28C75A86FBF5 /* Pods_Woof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1990CA02DCD45241C9E8DD /* Pods_Woof.framework */; };
+		B8091A5821DD5FA400544227 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5121DD5FA400544227 /* 4.png */; };
+		B8091A5921DD5FA400544227 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5221DD5FA400544227 /* splash.png */; };
+		B8091A5A21DD5FA400544227 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5321DD5FA400544227 /* 5.png */; };
+		B8091A5B21DD5FA400544227 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5421DD5FA400544227 /* 2.png */; };
+		B8091A5C21DD5FA400544227 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5521DD5FA400544227 /* 1.png */; };
+		B8091A5D21DD5FA400544227 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5621DD5FA400544227 /* 6.png */; };
+		B8091A5E21DD5FA400544227 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5721DD5FA400544227 /* 3.png */; };
 		B80CC7CB21D236C6007C067C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC7CA21D236C6007C067C /* AppDelegate.swift */; };
-		B80CC7CD21D236C6007C067C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC7CC21D236C6007C067C /* ViewController.swift */; };
 		B80CC7D021D236C6007C067C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80CC7CE21D236C6007C067C /* Main.storyboard */; };
 		B80CC7D321D236C6007C067C /* Woof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B80CC7D121D236C6007C067C /* Woof.xcdatamodeld */; };
 		B80CC7D521D236CA007C067C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B80CC7D421D236CA007C067C /* Assets.xcassets */; };
@@ -17,12 +23,7 @@
 		B80CC7E321D236CA007C067C /* WoofTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC7E221D236CA007C067C /* WoofTests.swift */; };
 		B80CC7EE21D236CA007C067C /* WoofUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC7ED21D236CA007C067C /* WoofUITests.swift */; };
 		B80CC80121D23E62007C067C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC80021D23E62007C067C /* HomeViewController.swift */; };
-		B80CC80321D23EAA007C067C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC80221D23EAA007C067C /* LoginViewController.swift */; };
 		B80CC80521D2A927007C067C /* DogItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC80421D2A927007C067C /* DogItemCell.swift */; };
-		B80CC80721D2AB04007C067C /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC80621D2AB04007C067C /* Dog.swift */; };
-		B80CC80921D2AB54007C067C /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC80821D2AB54007C067C /* Breed.swift */; };
-		B80CC80B21D2AC3A007C067C /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC80A21D2AC3A007C067C /* Weight.swift */; };
-		B80CC80D21D2AC6F007C067C /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC80C21D2AC6F007C067C /* Height.swift */; };
 		B80CC81021D2AD71007C067C /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC80F21D2AD71007C067C /* NetworkClient.swift */; };
 		B80CC81221D2AD9F007C067C /* NetworkClient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81121D2AD9F007C067C /* NetworkClient+Constants.swift */; };
 		B80CC81421D2B1FC007C067C /* CustomReqAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81321D2B1FC007C067C /* CustomReqAdapter.swift */; };
@@ -30,11 +31,11 @@
 		B80CC81821D2B53E007C067C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81721D2B53E007C067C /* HomeController.swift */; };
 		B80CC81A21D2CDD4007C067C /* HomeViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */; };
 		B80CC81C21D3E43B007C067C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC81B21D3E43B007C067C /* DetailViewController.swift */; };
-		B810C74421D540AB0070F7FF /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74321D540AB0070F7FF /* Breeds.swift */; };
 		B810C74621D54A290070F7FF /* BreedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74521D54A290070F7FF /* BreedListViewController.swift */; };
 		B810C74821D54AC40070F7FF /* BreedListViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74721D54AC40070F7FF /* BreedListViewController+Delegates.swift */; };
 		B810C74A21D54D210070F7FF /* BreedsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74921D54D210070F7FF /* BreedsController.swift */; };
 		B810C74C21D5556F0070F7FF /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810C74B21D5556F0070F7FF /* BaseController.swift */; };
+		B833D17F21DD46520096ABB3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B833D17E21DD46520096ABB3 /* BaseViewController.swift */; };
 		B8BDBE8221DBB7CB009285C5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBE8121DBB7CB009285C5 /* DataController.swift */; };
 		B8BDBEB021DBE7A3009285C5 /* CoreDataWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEA621DBE7A2009285C5 /* CoreDataWeight.swift */; };
 		B8BDBEB121DBE7A3009285C5 /* CoreDataBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBEA721DBE7A2009285C5 /* CoreDataBreed.swift */; };
@@ -72,9 +73,15 @@
 		64DDB69B2F8E8DD975D3D25F /* Pods_WoofUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoofUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B60BA89FC0294767E4618D /* Pods-Woof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woof.release.xcconfig"; path = "Pods/Target Support Files/Pods-Woof/Pods-Woof.release.xcconfig"; sourceTree = "<group>"; };
 		A018E21C48CE8F55A3CADE80 /* Pods_WoofTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoofTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8091A5121DD5FA400544227 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = ../../../../../../../../Desktop/readme/4.png; sourceTree = "<group>"; };
+		B8091A5221DD5FA400544227 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = ../../../../../../../../Desktop/readme/splash.png; sourceTree = "<group>"; };
+		B8091A5321DD5FA400544227 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = ../../../../../../../../Desktop/readme/5.png; sourceTree = "<group>"; };
+		B8091A5421DD5FA400544227 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../../../../../../Desktop/readme/2.png; sourceTree = "<group>"; };
+		B8091A5521DD5FA400544227 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../../../../../Desktop/readme/1.png; sourceTree = "<group>"; };
+		B8091A5621DD5FA400544227 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6.png; path = ../../../../../../../../Desktop/readme/6.png; sourceTree = "<group>"; };
+		B8091A5721DD5FA400544227 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = ../../../../../../../../Desktop/readme/3.png; sourceTree = "<group>"; };
 		B80CC7C721D236C6007C067C /* Woof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80CC7CA21D236C6007C067C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B80CC7CC21D236C6007C067C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B80CC7CF21D236C6007C067C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B80CC7D221D236C6007C067C /* Woof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Woof.xcdatamodel; sourceTree = "<group>"; };
 		B80CC7D421D236CA007C067C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,12 +94,7 @@
 		B80CC7ED21D236CA007C067C /* WoofUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoofUITests.swift; sourceTree = "<group>"; };
 		B80CC7EF21D236CA007C067C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B80CC80021D23E62007C067C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		B80CC80221D23EAA007C067C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B80CC80421D2A927007C067C /* DogItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogItemCell.swift; sourceTree = "<group>"; };
-		B80CC80621D2AB04007C067C /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
-		B80CC80821D2AB54007C067C /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
-		B80CC80A21D2AC3A007C067C /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
-		B80CC80C21D2AC6F007C067C /* Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Height.swift; sourceTree = "<group>"; };
 		B80CC80F21D2AD71007C067C /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		B80CC81121D2AD9F007C067C /* NetworkClient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Constants.swift"; sourceTree = "<group>"; };
 		B80CC81321D2B1FC007C067C /* CustomReqAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomReqAdapter.swift; sourceTree = "<group>"; };
@@ -100,11 +102,11 @@
 		B80CC81721D2B53E007C067C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegates.swift"; sourceTree = "<group>"; };
 		B80CC81B21D3E43B007C067C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		B810C74321D540AB0070F7FF /* Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
 		B810C74521D54A290070F7FF /* BreedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListViewController.swift; sourceTree = "<group>"; };
 		B810C74721D54AC40070F7FF /* BreedListViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BreedListViewController+Delegates.swift"; sourceTree = "<group>"; };
 		B810C74921D54D210070F7FF /* BreedsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsController.swift; sourceTree = "<group>"; };
 		B810C74B21D5556F0070F7FF /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		B833D17E21DD46520096ABB3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B8BDBE8121DBB7CB009285C5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		B8BDBEA621DBE7A2009285C5 /* CoreDataWeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataWeight.swift; path = ../../../../../model/CoreDataWeight.swift; sourceTree = "<group>"; };
 		B8BDBEA721DBE7A2009285C5 /* CoreDataBreed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataBreed.swift; path = ../../../../../model/CoreDataBreed.swift; sourceTree = "<group>"; };
@@ -164,6 +166,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B8091A5021DD5F9800544227 /* readme */ = {
+			isa = PBXGroup;
+			children = (
+				B8091A5521DD5FA400544227 /* 1.png */,
+				B8091A5421DD5FA400544227 /* 2.png */,
+				B8091A5721DD5FA400544227 /* 3.png */,
+				B8091A5121DD5FA400544227 /* 4.png */,
+				B8091A5321DD5FA400544227 /* 5.png */,
+				B8091A5621DD5FA400544227 /* 6.png */,
+				B8091A5221DD5FA400544227 /* splash.png */,
+			);
+			path = readme;
+			sourceTree = "<group>";
+		};
 		B80CC7BE21D236C6007C067C = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +205,7 @@
 		B80CC7C921D236C6007C067C /* Woof */ = {
 			isa = PBXGroup;
 			children = (
+				B8091A5021DD5F9800544227 /* readme */,
 				B80CC80E21D2AD5B007C067C /* Network */,
 				B80CC7FF21D238B3007C067C /* model */,
 				B80CC7FE21D238A5007C067C /* controller */,
@@ -234,14 +251,13 @@
 		B80CC7FC21D2388D007C067C /* view */ = {
 			isa = PBXGroup;
 			children = (
-				B80CC7CC21D236C6007C067C /* ViewController.swift */,
 				B80CC80021D23E62007C067C /* HomeViewController.swift */,
-				B80CC80221D23EAA007C067C /* LoginViewController.swift */,
 				B80CC80421D2A927007C067C /* DogItemCell.swift */,
 				B80CC81921D2CDD4007C067C /* HomeViewController+Delegates.swift */,
 				B80CC81B21D3E43B007C067C /* DetailViewController.swift */,
 				B810C74521D54A290070F7FF /* BreedListViewController.swift */,
 				B810C74721D54AC40070F7FF /* BreedListViewController+Delegates.swift */,
+				B833D17E21DD46520096ABB3 /* BaseViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -260,11 +276,6 @@
 			isa = PBXGroup;
 			children = (
 				B8BDBEA521DBE78F009285C5 /* coredata */,
-				B80CC80621D2AB04007C067C /* Dog.swift */,
-				B80CC80821D2AB54007C067C /* Breed.swift */,
-				B80CC80A21D2AC3A007C067C /* Weight.swift */,
-				B80CC80C21D2AC6F007C067C /* Height.swift */,
-				B810C74321D540AB0070F7FF /* Breeds.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -407,10 +418,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8091A5D21DD5FA400544227 /* 6.png in Resources */,
+				B8091A5821DD5FA400544227 /* 4.png in Resources */,
+				B8091A5921DD5FA400544227 /* splash.png in Resources */,
+				B8091A5E21DD5FA400544227 /* 3.png in Resources */,
 				B80CC7D821D236CA007C067C /* LaunchScreen.storyboard in Resources */,
 				B80CC81621D2B244007C067C /* DogCeo-Info.plist in Resources */,
+				B8091A5A21DD5FA400544227 /* 5.png in Resources */,
+				B8091A5B21DD5FA400544227 /* 2.png in Resources */,
 				B80CC7D521D236CA007C067C /* Assets.xcassets in Resources */,
 				B80CC7D021D236C6007C067C /* Main.storyboard in Resources */,
+				B8091A5C21DD5FA400544227 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,12 +515,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B80CC80921D2AB54007C067C /* Breed.swift in Sources */,
 				B8BDBEB021DBE7A3009285C5 /* CoreDataWeight.swift in Sources */,
 				B80CC7D321D236C6007C067C /* Woof.xcdatamodeld in Sources */,
 				B80CC81821D2B53E007C067C /* HomeController.swift in Sources */,
 				B8BDBEB821DBE7A3009285C5 /* CoreDataHeight+Properties.swift in Sources */,
-				B80CC80721D2AB04007C067C /* Dog.swift in Sources */,
 				B8BDBEB321DBE7A3009285C5 /* CoreDataBreeds.swift in Sources */,
 				B80CC81421D2B1FC007C067C /* CustomReqAdapter.swift in Sources */,
 				B8BDBEB921DBE7A3009285C5 /* CoreDataWeight+Properties.swift in Sources */,
@@ -513,14 +529,10 @@
 				B80CC81021D2AD71007C067C /* NetworkClient.swift in Sources */,
 				B8DF4F4821DBF21B00445734 /* Woof+CoreDataModel.swift in Sources */,
 				B80CC80521D2A927007C067C /* DogItemCell.swift in Sources */,
-				B810C74421D540AB0070F7FF /* Breeds.swift in Sources */,
 				B80CC81C21D3E43B007C067C /* DetailViewController.swift in Sources */,
-				B80CC7CD21D236C6007C067C /* ViewController.swift in Sources */,
 				B810C74821D54AC40070F7FF /* BreedListViewController+Delegates.swift in Sources */,
 				B8BDBEB221DBE7A3009285C5 /* CoreDataBreeds+Properties.swift in Sources */,
 				B80CC7CB21D236C6007C067C /* AppDelegate.swift in Sources */,
-				B80CC80D21D2AC6F007C067C /* Height.swift in Sources */,
-				B80CC80321D23EAA007C067C /* LoginViewController.swift in Sources */,
 				B8BDBEB621DBE7A3009285C5 /* CoreDataDog.swift in Sources */,
 				B8BDBEB521DBE7A3009285C5 /* CoreDataHeight.swift in Sources */,
 				B8BDBEB721DBE7A3009285C5 /* CoreDataBreeProperties.swift in Sources */,
@@ -529,7 +541,7 @@
 				B80CC80121D23E62007C067C /* HomeViewController.swift in Sources */,
 				B80CC81A21D2CDD4007C067C /* HomeViewController+Delegates.swift in Sources */,
 				B8BDBEB421DBE7A3009285C5 /* CoreDataDog+Properties.swift in Sources */,
-				B80CC80B21D2AC3A007C067C /* Weight.swift in Sources */,
+				B833D17F21DD46520096ABB3 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
