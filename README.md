@@ -1,7 +1,7 @@
 # Woof
 
 
-This is an IOS app which through you browse through hundreds of breeds of dog images along with its details like
+This is an IOS app in which  you browse through hundreds of breeds of dog images along with its details like
 Life span,Tempermant,Hieght,Weight etc.
 The app has 3 main screens
 
