@@ -87,12 +87,6 @@ class BreedListViewController: BaseViewController {
                             self.breeds.removeAll()
                         }
                         self.breeds = response
-                        DispatchQueue.global(qos: .userInitiated).async {
-                            for breed in self.breeds {
-                                let _ = CoreDataBreeds(id: breed.id, name: breed.name, context: DataController.shared.viewContext)
-                                DataController.shared.saveContext()
-                            }
-                        }
                         self.tableView.reloadData()
                         self.activityIndicator.stopAnimating()
                     }
