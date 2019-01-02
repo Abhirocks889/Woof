@@ -8,8 +8,9 @@
 
 import UIKit
 import MaterialComponents
+import CoreData
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageView: UIImageView!
@@ -17,9 +18,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var messageText: UILabel!
     @IBOutlet weak var refreshButton: MDCFloatingButton!
     @IBOutlet weak var collectionFlowLayout: UICollectionViewFlowLayout!
-    var dogs:[Dog] = []
+    var dogs:[CoreDataDog] = []
     var page = 0
-    
+    var fetchedResultsController:NSFetchedResultsController<CoreDataDog>!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureFlowLayout(view.frame.size)
@@ -27,7 +29,27 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         refreshButton.setImage(UIImage(named: "ic_refresh"), for:.normal)
         setUpUi()
-        fetchList()
+        setUpFetchResultsController()
+        if(dogs.isEmpty){
+            fetchList()
+        }
+    }
+    func setUpFetchResultsController(){
+        let breedsFetchRequest = NSFetchRequest<CoreDataDog>(entityName: "CoreDataDog")
+        breedsFetchRequest.sortDescriptors = []
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: breedsFetchRequest, managedObjectContext: DataController.shared.viewContext, sectionNameKeyPath: nil, cacheName: nil)
+        do {
+            try fetchedResultsController.performFetch()
+            let count = try fetchedResultsController.managedObjectContext.count(for: fetchedResultsController.fetchRequest)
+            for index in 0..<count{
+                let dog = fetchedResultsController.object(at: IndexPath(row: index, section: 0))
+                dogs.append(dog)
+                self.collectionView.reloadData()
+                self.setViewAfterAPICall()
+            }
+        } catch  {
+            fatalError("The fetch could not be performed: \(error.localizedDescription)")
+        }
     }
     
     fileprivate func fetchList(){
@@ -84,6 +106,10 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func onRefreshClicked(_ sender: Any) {
+        for dog in fetchedResultsController.fetchedObjects!{
+            DataController.shared.viewContext.delete(dog)
+            DataController.shared.saveContext()
+        }
         setViewsForApiCall()
         page += 1
         fetchList()

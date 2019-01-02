@@ -13,7 +13,7 @@ extension BreedListViewController:UITableViewDelegate,UITableViewDataSource,UISe
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "breedcell")
-        let breed:Breeds
+        let breed:CoreDataBreeds
         if(isFiltering()){
             breed = filteredBreeds[indexPath.row]
         }else{
@@ -42,6 +42,9 @@ extension BreedListViewController:UITableViewDelegate,UITableViewDataSource,UISe
     }
     
     func updateSearchResults(for searchController: UISearchController) {
+        if(!filteredBreeds.isEmpty){
+            filteredBreeds.removeAll()
+        }
         if let term = searchController.searchBar.text {
             filterRowsForSearchedText(term)
         }
@@ -49,7 +52,7 @@ extension BreedListViewController:UITableViewDelegate,UITableViewDataSource,UISe
     
     func filterRowsForSearchedText(_ searchText: String) {
         filteredBreeds = breeds.filter({
-            (breeds:Breeds) -> Bool in
+            (breeds:CoreDataBreeds) -> Bool in
             return breeds.name.lowercased().contains(searchText.lowercased())
         })
         tableView.reloadData()

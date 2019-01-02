@@ -12,12 +12,12 @@ class BreedsController:BaseController{
     static let Shared = BreedsController()
     private override init(){}
     
-    func getDogByBreed(breedId:Int,completionHandler: @escaping( _ isSuccess:Bool,_ result:Dog?,_ error:String?) ->Void )  {
+    func getDogByBreed(breedId:Int,completionHandler: @escaping( _ isSuccess:Bool,_ result:CoreDataDog?,_ error:String?) ->Void )  {
         NetworkClient.shared.getDogByBreed(breedId:breedId){
             (isSuccess,response,errorMessage) in
             if(isSuccess){
                 if let response = response ,!response.isEmpty{
-                    var dogArray:[Dog] = []
+                    var dogArray:[CoreDataDog] = []
                     self.parseResponse(response,&dogArray)
                     completionHandler(true,dogArray[0],nil)
                 }else{
@@ -28,14 +28,14 @@ class BreedsController:BaseController{
             }
         }
     }
-    func getBreeds(completionHandler: @escaping( _ isSuccess:Bool,_ result:[Breeds]?,_ error:String?) ->Void){
+    func getBreeds(completionHandler: @escaping( _ isSuccess:Bool,_ result:[CoreDataBreeds]?,_ error:String?) ->Void){
         NetworkClient.shared.getBreeds{
             (isSuccess,response,error) in
             if(!isSuccess){
                 completionHandler(false,nil,error)
             }else {
                 if let result = response{
-                    var breedsArray:[Breeds] = []
+                    var breedsArray:[CoreDataBreeds] = []
                     self.parseResponse(result, &breedsArray)
                     completionHandler(true,breedsArray,nil)
                 }
@@ -43,17 +43,16 @@ class BreedsController:BaseController{
         }
     }
     
-    fileprivate func parseResponse(_ result: [[String : AnyObject]], _ dogArray: inout [Breeds]){
+    fileprivate func parseResponse(_ result: [[String : AnyObject]], _ dogArray: inout [CoreDataBreeds]){
         for item in result{
-            let breeds = Breeds()
             guard let id = item[NetworkClient.Constants.ResponseKeys.Id] as? Int else{
                 fatalError("Response doesn't contain id")
             }
             guard let name = item[NetworkClient.Constants.ResponseKeys.Name] as? String else{
                 fatalError("Response doesnt contain name")
             }
-            breeds.id = id
-            breeds.name = name
+            let breeds = CoreDataBreeds(id: id, name: name, context: DataController.shared.viewContext)
+            DataController.shared.saveContext()
             dogArray.append(breeds)
         }
     }

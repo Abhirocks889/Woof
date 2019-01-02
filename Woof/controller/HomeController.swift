@@ -10,16 +10,15 @@ import Foundation
 class HomeController:BaseController{
     static let Shared = HomeController()
     private override init(){}
-
     
-    func fetchDogs( pageNum:String,completionHandler: @escaping( _ isSuccess:Bool,_ result:[Dog]?,_ error:String?) ->Void){
+    func fetchDogs( pageNum:String,completionHandler: @escaping( _ isSuccess:Bool,_ result:[CoreDataDog]?,_ error:String?) ->Void){
         NetworkClient.shared.getDogs(pageNum: pageNum){
             (isSuccess,response,error) in
             if(!isSuccess){
                 completionHandler(false,nil,error)
             }else {
                 if let result = response{
-                    var DogArray:[Dog] = []
+                    var DogArray:[CoreDataDog] = []
                     self.parseResponse(result, &DogArray)
                     completionHandler(true,DogArray,nil)
                 }

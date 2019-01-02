@@ -14,14 +14,27 @@ extension HomeViewController : UICollectionViewDataSource , UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let dogItemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "dogcell", for: indexPath) as! DogItemCell
-        DispatchQueue.global(qos: .userInitiated).async { () -> Void in
-            if let url = URL(string: self.dogs[indexPath.row].url) , let imageData = try? Data(contentsOf: url), let img = UIImage(data:imageData){
-                DispatchQueue.main.async {
-                    dogItemCell.ImageView.image = img
-                    dogItemCell.ActivityIndicator.stopAnimating()
+        let dog = self.dogs[indexPath.row]
+        if let imageData = dog.image{
+            DispatchQueue.global(qos: .userInitiated).async {
+                if let img = UIImage(data: imageData){
+                    DispatchQueue.main.async {
+                        dogItemCell.ImageView.image = img
+                        dogItemCell.ActivityIndicator.stopAnimating()
+                    }
+                }
+            }
+        }else{
+            DispatchQueue.global(qos: .userInitiated).async { () -> Void in
+                if let url = URL(string: dog.url!) , let imageData = try? Data(contentsOf: url), let img = UIImage(data:imageData){
+                    DispatchQueue.main.async {
+                        dogItemCell.ImageView.image = img
+                        dogItemCell.ActivityIndicator.stopAnimating()
+                    }
                 }
             }
         }
+        
         return dogItemCell
     }
     
