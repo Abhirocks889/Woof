@@ -8,13 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B5843DDAD4EA28C75A86FBF5 /* Pods_Woof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1990CA02DCD45241C9E8DD /* Pods_Woof.framework */; };
-		B8091A5821DD5FA400544227 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5121DD5FA400544227 /* 4.png */; };
-		B8091A5921DD5FA400544227 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5221DD5FA400544227 /* splash.png */; };
-		B8091A5A21DD5FA400544227 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5321DD5FA400544227 /* 5.png */; };
-		B8091A5B21DD5FA400544227 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5421DD5FA400544227 /* 2.png */; };
-		B8091A5C21DD5FA400544227 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5521DD5FA400544227 /* 1.png */; };
-		B8091A5D21DD5FA400544227 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5621DD5FA400544227 /* 6.png */; };
-		B8091A5E21DD5FA400544227 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A5721DD5FA400544227 /* 3.png */; };
+		B8091A6821DD698900544227 /* dogapi.png in Resources */ = {isa = PBXBuildFile; fileRef = B8091A6721DD698900544227 /* dogapi.png */; };
 		B80CC7CB21D236C6007C067C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CC7CA21D236C6007C067C /* AppDelegate.swift */; };
 		B80CC7D021D236C6007C067C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80CC7CE21D236C6007C067C /* Main.storyboard */; };
 		B80CC7D321D236C6007C067C /* Woof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B80CC7D121D236C6007C067C /* Woof.xcdatamodeld */; };
@@ -73,13 +67,14 @@
 		64DDB69B2F8E8DD975D3D25F /* Pods_WoofUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoofUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B60BA89FC0294767E4618D /* Pods-Woof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woof.release.xcconfig"; path = "Pods/Target Support Files/Pods-Woof/Pods-Woof.release.xcconfig"; sourceTree = "<group>"; };
 		A018E21C48CE8F55A3CADE80 /* Pods_WoofTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoofTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8091A5121DD5FA400544227 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = ../../../../../../../../Desktop/readme/4.png; sourceTree = "<group>"; };
-		B8091A5221DD5FA400544227 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = ../../../../../../../../Desktop/readme/splash.png; sourceTree = "<group>"; };
-		B8091A5321DD5FA400544227 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = ../../../../../../../../Desktop/readme/5.png; sourceTree = "<group>"; };
-		B8091A5421DD5FA400544227 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../../../../../../Desktop/readme/2.png; sourceTree = "<group>"; };
-		B8091A5521DD5FA400544227 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../../../../../Desktop/readme/1.png; sourceTree = "<group>"; };
-		B8091A5621DD5FA400544227 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6.png; path = ../../../../../../../../Desktop/readme/6.png; sourceTree = "<group>"; };
-		B8091A5721DD5FA400544227 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = ../../../../../../../../Desktop/readme/3.png; sourceTree = "<group>"; };
+		B8091A6021DD63FD00544227 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		B8091A6121DD63FD00544227 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B8091A6221DD63FD00544227 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		B8091A6321DD63FD00544227 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		B8091A6421DD63FD00544227 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		B8091A6521DD63FD00544227 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		B8091A6621DD63FD00544227 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		B8091A6721DD698900544227 /* dogapi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dogapi.png; path = ../../../../../../../../Desktop/dogapi.png; sourceTree = "<group>"; };
 		B80CC7C721D236C6007C067C /* Woof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80CC7CA21D236C6007C067C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B80CC7CF21D236C6007C067C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,18 +161,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B8091A5021DD5F9800544227 /* readme */ = {
+		B8091A5F21DD63EF00544227 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				B8091A5521DD5FA400544227 /* 1.png */,
-				B8091A5421DD5FA400544227 /* 2.png */,
-				B8091A5721DD5FA400544227 /* 3.png */,
-				B8091A5121DD5FA400544227 /* 4.png */,
-				B8091A5321DD5FA400544227 /* 5.png */,
-				B8091A5621DD5FA400544227 /* 6.png */,
-				B8091A5221DD5FA400544227 /* splash.png */,
+				B8091A6121DD63FD00544227 /* 1.png */,
+				B8091A6021DD63FD00544227 /* 2.png */,
+				B8091A6621DD63FD00544227 /* 3.png */,
+				B8091A6521DD63FD00544227 /* 4.png */,
+				B8091A6221DD63FD00544227 /* 5.png */,
+				B8091A6321DD63FD00544227 /* 6.png */,
+				B8091A6721DD698900544227 /* dogapi.png */,
+				B8091A6421DD63FD00544227 /* splash.png */,
 			);
-			path = readme;
+			path = images;
 			sourceTree = "<group>";
 		};
 		B80CC7BE21D236C6007C067C = {
@@ -205,7 +201,7 @@
 		B80CC7C921D236C6007C067C /* Woof */ = {
 			isa = PBXGroup;
 			children = (
-				B8091A5021DD5F9800544227 /* readme */,
+				B8091A5F21DD63EF00544227 /* images */,
 				B80CC80E21D2AD5B007C067C /* Network */,
 				B80CC7FF21D238B3007C067C /* model */,
 				B80CC7FE21D238A5007C067C /* controller */,
@@ -418,17 +414,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8091A5D21DD5FA400544227 /* 6.png in Resources */,
-				B8091A5821DD5FA400544227 /* 4.png in Resources */,
-				B8091A5921DD5FA400544227 /* splash.png in Resources */,
-				B8091A5E21DD5FA400544227 /* 3.png in Resources */,
+				B8091A6821DD698900544227 /* dogapi.png in Resources */,
 				B80CC7D821D236CA007C067C /* LaunchScreen.storyboard in Resources */,
 				B80CC81621D2B244007C067C /* DogCeo-Info.plist in Resources */,
-				B8091A5A21DD5FA400544227 /* 5.png in Resources */,
-				B8091A5B21DD5FA400544227 /* 2.png in Resources */,
 				B80CC7D521D236CA007C067C /* Assets.xcassets in Resources */,
 				B80CC7D021D236C6007C067C /* Main.storyboard in Resources */,
-				B8091A5C21DD5FA400544227 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
